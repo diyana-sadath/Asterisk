@@ -1,0 +1,20 @@
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio / JetBrains Rider
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln*
+*.csproj
+
+# Mac System Files
+.DS_Store
