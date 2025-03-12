@@ -1,0 +1,36 @@
+# Normalize text files to LF
+*.cs text eol=lf
+*.shader text eol=lf
+*.meta text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.asmdef text eol=lf
+
+# Treat image and binary files as binary (no conversions)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.psd binary
+*.tga binary
+*.fbx binary
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.zip binary
+*.unitypackage binary
+
+# Ignore visual studio temporary files
+*.user diff
+*.suo diff
+*.vscode/ diff
+
+# Prevent unwanted log files
+*.log diff
+
+# Unity-specific files
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
