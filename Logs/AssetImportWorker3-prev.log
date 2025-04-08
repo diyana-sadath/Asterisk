@@ -1,0 +1,456 @@
+Using pre-set license
+Built from '6000.0/release' branch; Version is '6000.0.43f1 (97272b72f107) revision 9905963'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 6061 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\asiya\OneDrive\Desktop\unity\6000.0.43f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/asiya/Downloads/diyana/Asterisk
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+55335
+-job-worker-count
+3
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: C:/Users/asiya/Downloads/diyana/Asterisk
+C:/Users/asiya/Downloads/diyana/Asterisk
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [11376]  Target information:
+
+Player connection [11376]  * "[IP] 192.168.116.104 [Port] 0 [Flags] 2 [Guid] 1538413196 [EditorId] 1538413196 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-351L8BF9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [11376] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [11376] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 15.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.43f1 (97272b72f107)
+[Subsystems] Discovering subsystems at path C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/asiya/Downloads/diyana/Asterisk/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   ATI
+    VRAM:     3030 MB
+    Driver:   30.0.13044.0
+Initialize mono
+Mono path[0] = 'C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Users/asiya/OneDrive/Desktop/unity/6000.0.43f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.016493 seconds.
+- Loaded All Assemblies, in  1.364 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.103 seconds
+Domain Reload Profiling: 2462ms
+	BeginReloadAssembly (559ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (143ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (468ms)
+		LoadAssemblies (549ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (453ms)
+			TypeCache.Refresh (450ms)
+				TypeCache.ScanAssembly (418ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1105ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (966ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (162ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (150ms)
+			ProcessInitializeOnLoadAttributes (489ms)
+			ProcessInitializeOnLoadMethodAttributes (153ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.268 seconds
+Refreshing native plugins compatible for Editor in 5.14 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.757 seconds
+Domain Reload Profiling: 4018ms
+	BeginReloadAssembly (336ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (1756ms)
+		LoadAssemblies (1149ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (808ms)
+			TypeCache.Refresh (641ms)
+				TypeCache.ScanAssembly (582ms)
+			BuildScriptInfoCaches (127ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (1759ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1416ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (254ms)
+			ProcessInitializeOnLoadAttributes (841ms)
+			ProcessInitializeOnLoadMethodAttributes (264ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 5.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6734 unused Assets / (4.9 MB). Loaded Objects now: 7467.
+Memory consumption went from 183.5 MB to 178.6 MB.
+Total: 21.029600 ms (FindLiveObjects: 1.712000 ms CreateObjectMapping: 2.913700 ms MarkObjects: 11.282900 ms  DeleteObjects: 5.116100 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6721 unused Assets / (4.4 MB). Loaded Objects now: 7467.
+Memory consumption went from 145.4 MB to 141.0 MB.
+Total: 322.483400 ms (FindLiveObjects: 3.053300 ms CreateObjectMapping: 2.112900 ms MarkObjects: 313.291400 ms  DeleteObjects: 4.019700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6721 unused Assets / (4.5 MB). Loaded Objects now: 7467.
+Memory consumption went from 145.4 MB to 140.8 MB.
+Total: 540.930100 ms (FindLiveObjects: 5.847800 ms CreateObjectMapping: 1.413100 ms MarkObjects: 526.267500 ms  DeleteObjects: 7.395300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  8.313 seconds
+Refreshing native plugins compatible for Editor in 7.54 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.660 seconds
+Domain Reload Profiling: 10022ms
+	BeginReloadAssembly (2029ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (385ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (697ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (6143ms)
+		LoadAssemblies (5920ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (757ms)
+			TypeCache.Refresh (65ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (606ms)
+			ResolveRequiredComponents (38ms)
+	FinalizeReload (1662ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1236ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (372ms)
+			ProcessInitializeOnLoadAttributes (679ms)
+			ProcessInitializeOnLoadMethodAttributes (130ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Refreshing native plugins compatible for Editor in 6.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6732 unused Assets / (3.7 MB). Loaded Objects now: 7470.
+Memory consumption went from 148.8 MB to 145.0 MB.
+Total: 21.439800 ms (FindLiveObjects: 1.649400 ms CreateObjectMapping: 1.356000 ms MarkObjects: 14.010600 ms  DeleteObjects: 4.418800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 53916.609544 seconds.
+  path: Assets/PS5/UI/PNG/Black/1x/zoomOut.png
+  artifactKey: Guid(2cd1663025f97f544aa24f83201df17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/1x/zoomOut.png using Guid(2cd1663025f97f544aa24f83201df17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '672b275823d2447d9c5bb77f33a8c459') in 2.7184355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001219 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingGreen_6.png
+  artifactKey: Guid(9227cbce22e16514cbae663404ebb75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingGreen_6.png using Guid(9227cbce22e16514cbae663404ebb75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f9520b0b6b7798cea04401a341d2b86') in 0.1624021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingYellow_5.png
+  artifactKey: Guid(687bbad7c813caf499d77cb1aa3491bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingYellow_5.png using Guid(687bbad7c813caf499d77cb1aa3491bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a77d4bf3cc710563097138cbc4bad7a7') in 0.39135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/PS5/UI/PNG/White/1x/zoomIn.png
+  artifactKey: Guid(98c679aa096204d489e8533314a62061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/White/1x/zoomIn.png using Guid(98c679aa096204d489e8533314a62061) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a194d2e509a053ee5ab6716a6bffc935') in 0.1779132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/PS5/UI/PNG/Black/1x/zoomDefault.png
+  artifactKey: Guid(3f3811713eee52d489b86b2593b05bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/1x/zoomDefault.png using Guid(3f3811713eee52d489b86b2593b05bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab4b7c7f978daa76f5a6c9b7a75bf7e7') in 0.0450658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PS5/UI/PNG/Black/2x/zoomDefault.png
+  artifactKey: Guid(19928c79b16e4f049b7d6ec06107930b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/2x/zoomDefault.png using Guid(19928c79b16e4f049b7d6ec06107930b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5fe193d420ecffbc95bbbef164fdaf3e') in 0.0434831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingYellow_4.png
+  artifactKey: Guid(77948a4498df9824e96e61b5fa790556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingYellow_4.png using Guid(77948a4498df9824e96e61b5fa790556) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4c73c69644e205b0c24ba0473a68895') in 0.045235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PS5/UI/PNG/White/1x/zoomDefault.png
+  artifactKey: Guid(8dff4ff16537bb8429f1f780d981e1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/White/1x/zoomDefault.png using Guid(8dff4ff16537bb8429f1f780d981e1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e6c106f84a5172a4e18be6a9848aab2') in 0.0444836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingRed_5.png
+  artifactKey: Guid(30a9d1c2d96b18240b848de8ae292245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingRed_5.png using Guid(30a9d1c2d96b18240b848de8ae292245) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14dd1a41834989feefe3d0c54b08aa74') in 0.0437538 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingGreen_1.png
+  artifactKey: Guid(38f791005b335fd46b7bf76633006568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingGreen_1.png using Guid(38f791005b335fd46b7bf76633006568) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6b100237b07eef72b1bb79ebb93d816') in 0.0396079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingRed_4.png
+  artifactKey: Guid(736bd4ad60ace3a48a0a9926403d0241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingRed_4.png using Guid(736bd4ad60ace3a48a0a9926403d0241) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3d8d577b266044b73a809a75384e1a6') in 0.041199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/PS5/UI/PNG/Black/1x/zoom.png
+  artifactKey: Guid(05b2bee96347bd649b69007cab94a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/1x/zoom.png using Guid(05b2bee96347bd649b69007cab94a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f5464f8e118f812f64ee3ef862220dd') in 0.0395866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingGreen_3.png
+  artifactKey: Guid(273ecff2be65b5041b216a3b5fa2fbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingGreen_3.png using Guid(273ecff2be65b5041b216a3b5fa2fbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03725705520323d09cdaa7b1c13c2249') in 0.0482178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/PS5/UI/PNG/White/2x/zoom.png
+  artifactKey: Guid(343d071e890c84149aa68514292dc4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/White/2x/zoom.png using Guid(343d071e890c84149aa68514292dc4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7578ffd05322a054eb889805c1cdbe73') in 0.0401571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PS5/UI/PNG/Black/1x/zoomIn.png
+  artifactKey: Guid(c48e80ddb367b394d93824bc069172ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/1x/zoomIn.png using Guid(c48e80ddb367b394d93824bc069172ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0608bd076f545e45acc9161c24e2b143') in 0.0363925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingRed_3.png
+  artifactKey: Guid(0e717a6236864304d947f946aadc4edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingRed_3.png using Guid(0e717a6236864304d947f946aadc4edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '185186f0d889f07628cb2ec24f94a9bb') in 0.0379668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingGreen_0.png
+  artifactKey: Guid(71d7c4e80d0e067499f56d5512a5c24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingGreen_0.png using Guid(71d7c4e80d0e067499f56d5512a5c24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9350b5266f333be86284281de5c7bd8') in 0.0436499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/PS5/UI/PNG/Black/2x/zoom.png
+  artifactKey: Guid(96b50f609b275d84eb6cacad485c743c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/2x/zoom.png using Guid(96b50f609b275d84eb6cacad485c743c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f5aba1dcb44626f283a5eb79e13e566') in 0.0400774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/PS5/UI/PNG/Black/2x/zoomOut.png
+  artifactKey: Guid(1f8e573aecfa49d499c0c249bcdb5afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/Black/2x/zoomOut.png using Guid(1f8e573aecfa49d499c0c249bcdb5afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05f25705656dd210e0f25d1b21564668') in 0.0449325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingGreen_2.png
+  artifactKey: Guid(63c98f806decbb9458fb3bf2d3326d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingGreen_2.png using Guid(63c98f806decbb9458fb3bf2d3326d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48ca01bcf36f0684c0a02f42516a3b8d') in 0.0515938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingYellow_7.png
+  artifactKey: Guid(1c1bde41a0e992c4ea37f3231b53c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingYellow_7.png using Guid(1c1bde41a0e992c4ea37f3231b53c419) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3abc459d60273bd8e7e02bfc11e9cb2') in 0.0402584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PS5/Spaceship/PNG/Parts/wingYellow_1.png
+  artifactKey: Guid(065b53b45d403b54387e9982e918540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/Spaceship/PNG/Parts/wingYellow_1.png using Guid(065b53b45d403b54387e9982e918540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70035d6d50b3fcd0d6c2eb509f9c04d2') in 0.049891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.160590 seconds.
+  path: Assets/Rectangle 3.png
+  artifactKey: Guid(1365f5e3ee5b07446aabc42fae20af2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rectangle 3.png using Guid(1365f5e3ee5b07446aabc42fae20af2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '707851146468b7fe3312b3024b56ae4a') in 0.0519214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/PS5/UI/PNG/White/2x/return.png
+  artifactKey: Guid(c2145eeb7cfde5542bf4582c409038fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PS5/UI/PNG/White/2x/return.png using Guid(c2145eeb7cfde5542bf4582c409038fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5fdbaeb6750b80c9d117d6171fa0778') in 0.0419322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -3,36 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Rohith\\Space Navigator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|c:\\users\\rohith\\space navigator\\assets\\udplistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\udplistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\starmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\starmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|c:\\users\\rohith\\space navigator\\assets\\imureceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\imureceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|c:\\users\\rohith\\space navigator\\assets\\scripts\\starspawnerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\starspawnerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarRotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\StarRotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\starspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\starspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameovermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\starmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\starmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\backgroudscroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backgroudscroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rohith\\Space Navigator\\Library\\PackageCache\\com.unity.ugui@03407c6d8751\\Runtime\\UGUI\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@03407c6d8751\\Runtime\\UGUI\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\spaceshipthruster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipthruster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\backcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\backcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\Thruster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Thruster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rohith\\Space Navigator\\Assets\\ScreenLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ScreenLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\gamewonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamewonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\gametimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gametimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\lifemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lifemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\asteroidspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\asteroidspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\hardstarspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hardstarspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|C:\\Users\\Rohith\\Space Navigator\\assets\\scripts\\starspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2331D064-8789-9884-0058-F45109D640DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\starspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidRotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\AsteroidRotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidBehavioir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\AsteroidBehavioir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,100 +83,206 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UDPListener.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\UDPListener.cs",
-              "RelativeDocumentMoniker": "Assets\\UDPListener.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\UDPListener.cs",
-              "RelativeToolTip": "Assets\\UDPListener.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwC4AAAAAAAAAAAAAAA==",
+              "Title": "StarMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StarMovement.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StarMovement.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwDgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:17:46.974Z",
+              "WhenOpened": "2025-03-29T07:15:21.754Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SpaceshipController.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\SpaceshipController.cs",
-              "RelativeDocumentMoniker": "Assets\\SpaceshipController.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\SpaceshipController.cs",
-              "RelativeToolTip": "Assets\\SpaceshipController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwCwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "AsteroidBehavioir.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidBehavioir.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AsteroidBehavioir.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidBehavioir.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AsteroidBehavioir.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T05:25:32.574Z"
+              "WhenOpened": "2025-03-28T17:38:40.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HardStarSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\HardStarSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HardStarSpawner.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\HardStarSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HardStarSpawner.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T17:22:08.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StarSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StarSpawner.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StarSpawner.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T14:35:43.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameTimer.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\GameTimer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameTimer.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\GameTimer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameTimer.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAIwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T01:33:05.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AsteroidSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AsteroidSpawner.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AsteroidSpawner.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:36:00.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AsteroidRotation.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AsteroidRotation.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\AsteroidRotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AsteroidRotation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:37:20.093Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IMUReceiver.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\IMUReceiver.cs",
-              "RelativeDocumentMoniker": "Assets\\IMUReceiver.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\IMUReceiver.cs",
-              "RelativeToolTip": "Assets\\IMUReceiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Title": "StarSpawnerBase.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarSpawnerBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StarSpawnerBase.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarSpawnerBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StarSpawnerBase.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAIBJwGYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T05:23:20.738Z",
+              "WhenOpened": "2025-03-28T17:45:16.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StarMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\StarMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\StarMovement.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\StarMovement.cs",
-              "RelativeToolTip": "Assets\\StarMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "LifeManager.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\LifeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LifeManager.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\LifeManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LifeManager.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwA4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T05:10:00.534Z"
+              "WhenOpened": "2025-03-28T13:50:20.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StarRotation.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StarRotation.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\StarRotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StarRotation.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:13:56.259Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StarSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\StarSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\StarSpawner.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\StarSpawner.cs",
-              "RelativeToolTip": "Assets\\StarSpawner.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwDwAAAAAAAAAAAAAAA==",
+              "Title": "GameOverManager.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\GameOverManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverManager.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\GameOverManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameOverManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T04:49:39.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Button.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Library\\PackageCache\\com.unity.ugui@03407c6d8751\\Runtime\\UGUI\\UI\\Core\\Button.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@03407c6d8751\\Runtime\\UGUI\\UI\\Core\\Button.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Library\\PackageCache\\com.unity.ugui@03407c6d8751\\Runtime\\UGUI\\UI\\Core\\Button.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@03407c6d8751\\Runtime\\UGUI\\UI\\Core\\Button.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T04:00:43.764Z"
+              "WhenOpened": "2025-03-28T18:10:04.474Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ScreenLoader.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\ScreenLoader.cs",
-              "RelativeDocumentMoniker": "Assets\\ScreenLoader.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\ScreenLoader.cs",
-              "RelativeToolTip": "Assets\\ScreenLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "GameWonManager.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\GameWonManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameWonManager.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\GameWonManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameWonManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T03:58:27.28Z"
+              "WhenOpened": "2025-03-29T06:11:16.388Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "BackColor.cs",
-              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\BackColor.cs",
-              "RelativeDocumentMoniker": "Assets\\BackColor.cs",
-              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\BackColor.cs",
-              "RelativeToolTip": "Assets\\BackColor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "Thruster.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\Thruster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Thruster.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\Thruster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Thruster.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T05:05:49.335Z"
+              "WhenOpened": "2025-03-29T06:34:53.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpaceshipThruster.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\SpaceshipThruster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipThruster.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\SpaceshipThruster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceshipThruster.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:37:42.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BackgroudScroll.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\BackgroudScroll.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BackgroudScroll.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\BackgroudScroll.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BackgroudScroll.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:52:12.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreManager.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScoreManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T14:02:04.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SpaceshipController.cs",
+              "DocumentMoniker": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\SpaceshipController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipController.cs",
+              "ToolTip": "C:\\Users\\Rohith\\Space Navigator\\Assets\\Scripts\\SpaceshipController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceshipController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T17:52:34.301Z"
             }
           ]
         }
