@@ -7,7 +7,6 @@
 *.xml text eol=lf
 *.yml text eol=lf
 *.asmdef text eol=lf
-
 # Treat image and binary files as binary (no conversions)
 *.png binary
 *.jpg binary
@@ -21,16 +20,16 @@
 *.wav binary
 *.zip binary
 *.unitypackage binary
-
 # Ignore visual studio temporary files
 *.user diff
 *.suo diff
 *.vscode/ diff
-
 # Prevent unwanted log files
 *.log diff
-
 # Unity-specific files
 *.unity text eol=lf
 *.prefab text eol=lf
 *.asset text eol=lf
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.a filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
