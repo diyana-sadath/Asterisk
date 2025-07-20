@@ -51,6 +51,20 @@ public class SpaceshipController : MonoBehaviour
         if (other.CompareTag("Asteroid"))
         {
             SoundManager.Instance?.PlayAsteroidHit();
+
+            // Visual feedback
+            SpaceshipDamageEffects damageEffects = GetComponent<SpaceshipDamageEffects>();
+            if (damageEffects != null)
+            {
+                damageEffects.TriggerHitEffects();
+            }
+
+            // Create explosion at the point of collision
+            if (ExplosionManager.Instance != null)
+            {
+                ExplosionManager.Instance.CreateExplosion(other.transform.position);
+            }
+
             LifeManager.Instance.LoseLife();
             Destroy(other.gameObject);
 

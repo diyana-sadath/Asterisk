@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 339.40002, y: 202.9, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 12
-  m_Sprite: {fileID: -6738170186872648109, guid: 36bc984283ae08644aa013c21c300cbb, type: 3}
+  m_Sprite: {fileID: 5665502227679433224, guid: 0e693b4f5588b0f41b372ee7bbd95c91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,6 +179,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb0b290b9146cc46a8d5204ce092f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectionAnimationDuration: 1
+  expandSize: 4
+  rotationSpeed: 720
+  glowColor: {r: 1, g: 1, b: 0.2245282, a: 1}
+  sparkleCount: 5
 --- !u!114 &6470749063663258877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,3 +197,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  rotationSpeed: 0

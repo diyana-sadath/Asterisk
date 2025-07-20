@@ -7,6 +7,10 @@ using System.Collections.Generic;
 public class DifficultyUnlockManager : MonoBehaviour
 {
     public static DifficultyUnlockManager Instance { get; private set; }
+    
+    // Events to notify other components about unlock changes
+    public delegate void DifficultyUnlockChanged();
+    public event DifficultyUnlockChanged OnDifficultyStatusChanged;
 
     // Reference to the Coming Soon panel game object
     [SerializeField] private GameObject comingSoonPanel;
@@ -20,6 +24,7 @@ public class DifficultyUnlockManager : MonoBehaviour
     private bool easyCompleted = false;
     private bool mediumCompleted = false;
     private string currentPlayFabId = "";
+    private bool isInitialized = false;
 
     private void Awake()
     {
@@ -28,11 +33,19 @@ public class DifficultyUnlockManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("DifficultyUnlockManager: Instance created and set to DontDestroyOnLoad");
         }
-        else
+        else if (Instance != this)
         {
+            Debug.Log("DifficultyUnlockManager: Destroying duplicate instance");
             Destroy(gameObject);
+            return;
         }
+
+        // Load initial state from PlayerPrefs
+        easyCompleted = PlayerPrefs.GetInt("EasyCompleted", 0) == 1;
+        mediumCompleted = PlayerPrefs.GetInt("MediumCompleted", 0) == 1;
+        Debug.Log($"Initial state from PlayerPrefs: Easy: {easyCompleted}, Medium: {mediumCompleted}");
     }
 
     private void Start()
@@ -55,29 +68,52 @@ public class DifficultyUnlockManager : MonoBehaviour
             backButton.onClick.AddListener(OnBackButtonClicked);
         }
 
-        // Find the authentication manager and subscribe to events
+        // Find and subscribe to the auth manager's events
+        FindAndSubscribeToAuthManager();
+        
+        // Initialize difficulty status
+        InitializeDifficultyStatus();
+    }
+
+    private void FindAndSubscribeToAuthManager()
+    {
         PlayFabAuthManager authManager = FindObjectOfType<PlayFabAuthManager>();
         if (authManager != null)
         {
-            // Add event listeners if PlayFabAuthManager has been updated
-            if (HasEvents(authManager))
+            authManager.OnUserLoggedIn += LoadUserCompletionStatus;
+            authManager.OnUserLoggedOut += ResetCompletionStatus;
+            
+            // If user is already logged in when this component starts
+            if (PlayFabClientAPI.IsClientLoggedIn())
             {
-                authManager.OnUserLoggedIn += LoadUserCompletionStatus;
-                authManager.OnUserLoggedOut += ResetCompletionStatus;
+                Debug.Log("User already logged in, loading PlayFab difficulty data");
+                LoadUserCompletionStatus();
             }
-            else
-            {
-                Debug.LogWarning("PlayFabAuthManager doesn't have login/logout events. User-specific difficulty progress won't work.");
-            }
+            
+            Debug.Log("Successfully subscribed to PlayFabAuthManager events");
+        }
+        else
+        {
+            Debug.LogWarning("PlayFabAuthManager not found. User-specific difficulty progress won't work.");
         }
     }
 
-    // Check if the auth manager has the required events
-    private bool HasEvents(PlayFabAuthManager authManager)
+    public void InitializeDifficultyStatus()
     {
-        // Using reflection to check if events exist
-        var eventInfo = authManager.GetType().GetEvent("OnUserLoggedIn");
-        return eventInfo != null;
+        if (isInitialized) return;
+        
+        // If logged in to PlayFab, load from there, otherwise use PlayerPrefs data
+        if (PlayFabClientAPI.IsClientLoggedIn())
+        {
+            LoadUserCompletionStatus();
+        }
+        else
+        {
+            // Already loaded from PlayerPrefs in Awake
+            NotifyUnlockStatusChanged();
+        }
+        
+        isInitialized = true;
     }
 
     // This method is called when the Map button is clicked
@@ -104,88 +140,104 @@ public class DifficultyUnlockManager : MonoBehaviour
         Debug.Log("Back button clicked, returning to home screen");
     }
 
-    // Load completion status from PlayerPrefs or PlayFab
-    private void LoadCompletionStatus()
-    {
-        // If logged in to PlayFab, load from there
-        if (PlayFabClientAPI.IsClientLoggedIn())
-        {
-            LoadUserCompletionStatus();
-        }
-        else
-        {
-            // Otherwise, load from PlayerPrefs
-            easyCompleted = PlayerPrefs.GetInt("EasyCompleted", 0) == 1;
-            mediumCompleted = PlayerPrefs.GetInt("MediumCompleted", 0) == 1;
-            
-            Debug.Log($"Loaded difficulty status from PlayerPrefs: Easy completed: {easyCompleted}, Medium completed: {mediumCompleted}");
-        }
-    }
-
     // Load user-specific completion status from PlayFab
-    private void LoadUserCompletionStatus()
+    public void LoadUserCompletionStatus()
     {
         if (!PlayFabClientAPI.IsClientLoggedIn())
         {
             Debug.Log("User not logged in. Cannot load difficulty data from PlayFab.");
-            LoadCompletionStatus(); // Fall back to PlayerPrefs
             return;
         }
 
         // Get user data from PlayFab
-        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), 
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(),
             result => {
                 Debug.Log("Fetching user difficulty data from PlayFab");
-                
+
                 // Get the PlayFab ID
                 PlayFabClientAPI.GetAccountInfo(new GetAccountInfoRequest(),
                     accountInfo => {
                         currentPlayFabId = accountInfo.AccountInfo.PlayFabId;
+                        Debug.Log("PlayFab ID: " + currentPlayFabId);
                     },
                     error => {
                         Debug.LogError("Error getting account info: " + error.ErrorMessage);
                     }
                 );
-                
-                // Default to false if the key doesn't exist
-                if (result.Data != null)
+
+                bool previousEasyStatus = easyCompleted;
+                bool previousMediumStatus = mediumCompleted;
+
+                // For a new user, we want to start with everything locked except Easy
+                easyCompleted = false;
+                mediumCompleted = false;
+
+                // Only override defaults if data exists
+                if (result.Data != null && result.Data.Count > 0)
                 {
                     if (result.Data.TryGetValue("EasyCompleted", out var easyValue))
                     {
                         easyCompleted = easyValue.Value == "1";
                     }
-                    
+
                     if (result.Data.TryGetValue("MediumCompleted", out var mediumValue))
                     {
                         mediumCompleted = mediumValue.Value == "1";
                     }
                 }
-                
+
                 Debug.Log($"Loaded difficulty status from PlayFab: Easy completed: {easyCompleted}, Medium completed: {mediumCompleted}");
+
+                // Also update PlayerPrefs to keep them in sync
+                PlayerPrefs.SetInt("EasyCompleted", easyCompleted ? 1 : 0);
+                PlayerPrefs.SetInt("MediumCompleted", mediumCompleted ? 1 : 0);
+                PlayerPrefs.Save();
+
+                // Notify listeners if status changed
+                if (previousEasyStatus != easyCompleted || previousMediumStatus != mediumCompleted)
+                {
+                    NotifyUnlockStatusChanged();
+                }
             },
             error => {
                 Debug.LogError("Error loading user data: " + error.ErrorMessage);
-                LoadCompletionStatus(); // Fall back to PlayerPrefs
+
+                // On error, we still need to ensure proper initial state and notify listeners
+                easyCompleted = PlayerPrefs.GetInt("EasyCompleted", 0) == 1;
+                mediumCompleted = PlayerPrefs.GetInt("MediumCompleted", 0) == 1;
+                NotifyUnlockStatusChanged();
             }
         );
     }
 
     // Reset completion status when user logs out
-    private void ResetCompletionStatus()
+    public void ResetCompletionStatus()
     {
+        bool statusChanged = easyCompleted || mediumCompleted;
+        
         easyCompleted = false;
         mediumCompleted = false;
         currentPlayFabId = "";
+        
+        // Update PlayerPrefs
+        PlayerPrefs.SetInt("EasyCompleted", 0);
+        PlayerPrefs.SetInt("MediumCompleted", 0);
+        PlayerPrefs.Save();
+        
         Debug.Log("Reset difficulty completion status due to logout");
         
-        // Reload from PlayerPrefs for non-logged-in state
-        LoadCompletionStatus();
+        if (statusChanged)
+        {
+            NotifyUnlockStatusChanged();
+        }
     }
 
     // Call this when Easy mode is completed
     public void CompleteEasyMode()
     {
         Debug.Log("DifficultyUnlockManager: Completing Easy mode!");
+        if (easyCompleted) return; // Already completed
+        
         easyCompleted = true;
         
         // Save to PlayerPrefs for offline use
@@ -197,12 +249,16 @@ public class DifficultyUnlockManager : MonoBehaviour
         {
             SaveUserCompletionStatus();
         }
+        
+        NotifyUnlockStatusChanged();
     }
 
     // Call this when Medium mode is completed
     public void CompleteMediumMode()
     {
         Debug.Log("DifficultyUnlockManager: Completing Medium mode!");
+        if (mediumCompleted) return; // Already completed
+        
         mediumCompleted = true;
         
         // Save to PlayerPrefs for offline use
@@ -214,6 +270,8 @@ public class DifficultyUnlockManager : MonoBehaviour
         {
             SaveUserCompletionStatus();
         }
+        
+        NotifyUnlockStatusChanged();
     }
     
     // Save completion status to PlayFab
@@ -254,5 +312,31 @@ public class DifficultyUnlockManager : MonoBehaviour
             default:
                 return false;
         }
+    }
+    
+    // Notify all listeners that unlock status has changed
+    private void NotifyUnlockStatusChanged()
+    {
+        Debug.Log($"Notifying listeners of difficulty status change: Easy: {easyCompleted}, Medium: {mediumCompleted}");
+        OnDifficultyStatusChanged?.Invoke();
+    }
+    
+    // For testing and debugging
+    public void ResetAllProgress()
+    {
+        PlayerPrefs.DeleteKey("EasyCompleted");
+        PlayerPrefs.DeleteKey("MediumCompleted");
+        PlayerPrefs.Save();
+        
+        easyCompleted = false;
+        mediumCompleted = false;
+        
+        if (PlayFabClientAPI.IsClientLoggedIn())
+        {
+            SaveUserCompletionStatus();
+        }
+        
+        NotifyUnlockStatusChanged();
+        Debug.Log("All difficulty progress reset");
     }
 }

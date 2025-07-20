@@ -48,13 +48,20 @@ public class PlayFabAuthManager : MonoBehaviour
     [Header("Home Panel UI")]
     public Text homeStatusText;
 
+    private DifficultyUnlockManager difficultyManager;
+    private bool initialPanelSetupDone = false;
+
     private void Start()
     {
-        homePanel.SetActive(false);
-        signUpPanel.SetActive(false);
-        signInPanel.SetActive(false);
-        signOutButton.gameObject.SetActive(false);
-        
+        // Initially hide all panels until we determine what to show
+        if (!initialPanelSetupDone)
+        {
+            homePanel.SetActive(false);
+            signUpPanel.SetActive(false);
+            signInPanel.SetActive(false);
+            signOutButton.gameObject.SetActive(false);
+            initialPanelSetupDone = true;
+        }
 
         homeSignInButton.onClick.AddListener(ShowSignInPanel);
         homeSignUpButton.onClick.AddListener(ShowSignUpPanel);
@@ -74,23 +81,50 @@ public class PlayFabAuthManager : MonoBehaviour
 
         signOutButton.onClick.AddListener(OnSignOutClicked);
         
+        // Find the difficulty manager to communicate with it
+        difficultyManager = FindObjectOfType<DifficultyUnlockManager>();
         
+        // Auto-login check if we have cached credentials
+        CheckForCachedLogin();
     }
     
-    
-
-    
+    private void CheckForCachedLogin()
+    {
+        // This will attempt to use cached credentials if they exist
+        if (PlayFabClientAPI.IsClientLoggedIn())
+        {
+            Debug.Log("Found cached PlayFab login, getting account info");
+            GetDisplayName();
+            // Update UI for logged-in state, but don't change panel visibility
+            signOutButton.gameObject.SetActive(true);
+            // Notify listeners that user has logged in
+            OnUserLoggedIn?.Invoke();
+        }
+        else
+        {
+            Debug.Log("No cached PlayFab login found");
+            // Don't change panel visibility - leave it as is
+            signOutButton.gameObject.SetActive(false);
+            homeStatusText.text = "Not signed in";
+        }
+    }
 
     public void ShowHomePanel()
     {
         homePanel.SetActive(true);
         signUpPanel.SetActive(false);
         signInPanel.SetActive(false);
-        signOutButton.gameObject.SetActive(true);
+        
+        // Only show sign out button if logged in
+        signOutButton.gameObject.SetActive(PlayFabClientAPI.IsClientLoggedIn());
 
-        if (PlayerPrefs.HasKey("DisplayName"))
+        if (PlayerPrefs.HasKey("DisplayName") && PlayFabClientAPI.IsClientLoggedIn())
         {
             homeStatusText.text = "Logged in as: " + PlayerPrefs.GetString("DisplayName");
+        }
+        else
+        {
+            homeStatusText.text = "Not signed in";
         }
     }
 
@@ -167,6 +201,7 @@ public class PlayFabAuthManager : MonoBehaviour
                 Debug.Log("Display name updated successfully to: " + result.DisplayName);
                 PlayerPrefs.SetString("DisplayName", result.DisplayName);
                 homeStatusText.text = "Logged in as: " + result.DisplayName;
+                signOutButton.gameObject.SetActive(true);
             },
             error => {
                 Debug.LogError("Error updating display name: " + error.ErrorMessage);
@@ -233,6 +268,7 @@ public class PlayFabAuthManager : MonoBehaviour
                 {
                     PlayerPrefs.SetString("DisplayName", displayName);
                     homeStatusText.text = "Logged in as: " + displayName;
+                    signOutButton.gameObject.SetActive(true);
                     Debug.Log("Display Name: " + displayName);
                 }
                 else
@@ -258,8 +294,10 @@ public class PlayFabAuthManager : MonoBehaviour
         PlayerPrefs.DeleteKey("DisplayName");
         signOutButton.gameObject.SetActive(false);
         homeStatusText.text = "Not signed in";
-        ShowHomePanel();
         Debug.Log("User signed out.");
+        
+        // Keep the home panel active but update its UI
+        // Don't call HideAllPanels() as it would hide the currently active panel
         
         // Notify listeners that user has logged out
         OnUserLoggedOut?.Invoke();

@@ -3,8 +3,6 @@ using PlayFab;
 using PlayFab.ClientModels;
 using System.Collections.Generic;
 
-
-
 public class GameWonManager : MonoBehaviour
 {
     public static GameWonManager Instance;
@@ -45,33 +43,10 @@ public class GameWonManager : MonoBehaviour
             Time.timeScale = 0f; // Pause the game
 
             int finalScore = ScoreManager.Instance.GetCurrentScore();
-            string difficulty = GameController.Instance.selectedDifficulty.ToString();
+            GameController.Difficulty difficulty = GameController.Instance.selectedDifficulty;
 
-            // Submit the score to PlayFab
-            SubmitScoreToPlayFab(difficulty, finalScore);
-
+            // Submit the score to PlayFab using the central manager
+            PlayFabScoreManager.Instance.SubmitScore(difficulty, finalScore);
         }
     }
-
-    private void SubmitScoreToPlayFab(string difficulty, int score)
-    {
-        string statisticName = difficulty + "Score"; // e.g., "EasyScore"
-        var request = new UpdatePlayerStatisticsRequest
-        {
-            Statistics = new List<StatisticUpdate>
-            {
-                new StatisticUpdate
-                {
-                    StatisticName = statisticName,
-                    Value = score
-                }
-            }
-        };
-
-        PlayFabClientAPI.UpdatePlayerStatistics(request,
-            result => Debug.Log("Successfully submitted score."),
-            error => Debug.LogError("Error submitting score: " + error.GenerateErrorReport())
-        );
-    }
-
 }

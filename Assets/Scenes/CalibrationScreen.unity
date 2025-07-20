@@ -275,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phoneDot: {fileID: 929827611}
+  phoneDotObjectName: PhoneDot
   movementScale: 200
   smoothing: 5
   defaultSensitivity: 3
@@ -506,6 +507,7 @@ GameObject:
   - component: {fileID: 305736678}
   - component: {fileID: 305736677}
   - component: {fileID: 305736676}
+  - component: {fileID: 305736680}
   m_Layer: 5
   m_Name: OptionsButton
   m_TagString: Untagged
@@ -640,6 +642,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305736674}
   m_CullTransparentMesh: 1
+--- !u!114 &305736680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305736674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe2d33b17412004baf015228dfda4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleEffect: 0.8
 --- !u!1 &327783262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1426,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062439449}
   m_CullTransparentMesh: 1
+--- !u!1 &1098779008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1098779010}
+  - component: {fileID: 1098779009}
+  m_Layer: 0
+  m_Name: SceneAccessibility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1098779009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098779008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1b7bf6059ae3a41a2449a92bd67ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImages:
+  - {fileID: 0}
+  textElements: []
+  elementsToHideInHighContrast: []
+  useCustomColors: 0
+  customHighContrastBackground: {r: 0, g: 0, b: 0, a: 1}
+  customHighContrastText: {r: 1, g: 1, b: 1, a: 1}
+  customNormalBackground: {r: 0, g: 0, b: 0, a: 0.5}
+  customNormalText: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+--- !u!4 &1098779010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098779008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 630.0889, y: 679.3616, z: 0.9089473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120828508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,6 +2116,7 @@ GameObject:
   - component: {fileID: 1602326276}
   - component: {fileID: 1602326275}
   - component: {fileID: 1602326278}
+  - component: {fileID: 1602326279}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2171,6 +2240,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: HomeScreen
+--- !u!114 &1602326279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602326273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe2d33b17412004baf015228dfda4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleEffect: 0.8
 --- !u!1 &1704719676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,6 +2283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phoneDot: {fileID: 929827611}
+  phoneDotObjectName: PhoneDot
   movementScale: 200
   smoothing: 5
   defaultSensitivity: 3
@@ -2549,3 +2632,4 @@ SceneRoots:
   - {fileID: 1745139908}
   - {fileID: 162025642}
   - {fileID: 1704719678}
+  - {fileID: 1098779010}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class DifficultyDropdown : MonoBehaviour
 {
@@ -9,36 +10,49 @@ public class DifficultyDropdown : MonoBehaviour
 
     private bool easyCompleted;
     private bool mediumCompleted;
+    private Coroutine congratsCoroutine;
+    private DifficultyUnlockManager unlockManager;
 
     void Start()
     {
+        // Wait one frame to ensure DifficultyUnlockManager is fully initialized
+        StartCoroutine(InitializeDropdownAfterDelay());
+    }
+
+    IEnumerator InitializeDropdownAfterDelay()
+    {
+        // Wait a frame to ensure DifficultyUnlockManager is initialized
+        yield return null;
+        
         if (difficultyDropdown != null)
         {
             // Populate dropdown with difficulty options
             difficultyDropdown.ClearOptions();
             difficultyDropdown.AddOptions(new System.Collections.Generic.List<string> { "Easy", "Medium", "Hard" });
 
-            // Find the DifficultyUnlockManager to check completion status
-            DifficultyUnlockManager unlockManager = FindAnyObjectByType<DifficultyUnlockManager>();
-
+            // Find the manager instance
+            unlockManager = DifficultyUnlockManager.Instance;
+            
             if (unlockManager == null)
             {
+                Debug.LogError("DifficultyUnlockManager instance not found! Creating a new manager.");
+                
                 // Create new GameObject with DifficultyUnlockManager if it doesn't exist
                 GameObject managerObject = new GameObject("DifficultyUnlockManager");
                 unlockManager = managerObject.AddComponent<DifficultyUnlockManager>();
                 DontDestroyOnLoad(managerObject);
-                Debug.Log("Created new DifficultyUnlockManager from DifficultyDropdown");
+                unlockManager.InitializeDifficultyStatus();
             }
 
-            // Get completion status from the manager
-            easyCompleted = unlockManager.IsDifficultyUnlocked(1); // Check if Medium (1) is unlocked
-            mediumCompleted = unlockManager.IsDifficultyUnlocked(2); // Check if Hard (2) is unlocked
-
+            // Subscribe to difficulty status change events
+            unlockManager.OnDifficultyStatusChanged += UpdateDifficultyDisplay;
+            
+            // Get initial completion status
+            RefreshCompletionStatus();
+            
             // Load saved difficulty selection
             difficultyDropdown.value = PlayerPrefs.GetInt("SelectedDifficulty", 0); // Default to Easy (0)
-
-            Debug.Log($"DifficultyDropdown loaded status: Easy completed: {easyCompleted}, Medium completed: {mediumCompleted}");
-
+            
             // Lock unavailable difficulties
             LockUnavailableDifficulties();
 
@@ -49,19 +63,58 @@ public class DifficultyDropdown : MonoBehaviour
             UpdateLockStatus();
 
             // Start scrolling text if all difficulties are unlocked
-            if (easyCompleted && mediumCompleted)
-            {
-                StartCoroutine(ShowUnlockMessage());
-            }
+            UpdateCongratulationsMessage();
+            
+            Debug.Log($"DifficultyDropdown initialized with: Easy: {easyCompleted}, Medium: {mediumCompleted}");
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe from events
+        if (unlockManager != null)
+        {
+            unlockManager.OnDifficultyStatusChanged -= UpdateDifficultyDisplay;
+        }
+        
+        // Stop any running coroutines
+        if (congratsCoroutine != null)
+        {
+            StopCoroutine(congratsCoroutine);
+        }
+    }
+
+    public void UpdateDifficultyDisplay()
+    {
+        RefreshCompletionStatus();
+        LockUnavailableDifficulties();
+        UpdateLockStatus();
+        UpdateCongratulationsMessage();
+        
+        // Ensure selected difficulty is valid
+        ValidateSelection(difficultyDropdown.value);
+        
+        Debug.Log("Difficulty display updated");
+    }
+    
+    private void RefreshCompletionStatus()
+    {
+        if (unlockManager != null)
+        {
+            easyCompleted = unlockManager.IsDifficultyUnlocked(1);
+            mediumCompleted = unlockManager.IsDifficultyUnlocked(2);
+            Debug.Log($"Refreshed completion status: Easy: {easyCompleted}, Medium: {mediumCompleted}");
         }
     }
 
     void LockUnavailableDifficulties()
     {
-        difficultyDropdown.options[1].text = easyCompleted ? "Medium" : "Medium (Locked)";
-        difficultyDropdown.options[2].text = mediumCompleted ? "Hard" : "Hard (Locked)";
-
-        difficultyDropdown.RefreshShownValue();
+        if (difficultyDropdown != null && difficultyDropdown.options.Count >= 3)
+        {
+            difficultyDropdown.options[1].text = easyCompleted ? "Medium" : "Medium (Locked)";
+            difficultyDropdown.options[2].text = mediumCompleted ? "Hard" : "Hard (Locked)";
+            difficultyDropdown.RefreshShownValue();
+        }
     }
 
     void UpdateLockStatus()
@@ -85,26 +138,24 @@ public class DifficultyDropdown : MonoBehaviour
 
     void ValidateSelection(int selectedIndex)
     {
-        // Store the original selection to avoid infinite recursion
-        int originalSelection = selectedIndex;
-
+        // Check if we need to override the selection
         if (selectedIndex == 1 && !easyCompleted)
         {
             difficultyDropdown.value = 0; // Reset to Easy
             ShowMessage("Complete Easy mode to unlock Medium!");
+            return;
         }
         else if (selectedIndex == 2 && !mediumCompleted)
         {
             difficultyDropdown.value = easyCompleted ? 1 : 0; // Reset to Medium if unlocked, otherwise Easy
             ShowMessage("Complete Medium mode to unlock Hard!");
+            return;
         }
-        else
-        {
-            // Save the selected difficulty if it's valid
-            PlayerPrefs.SetInt("SelectedDifficulty", selectedIndex);
-            PlayerPrefs.Save();
-            Debug.Log($"Saved difficulty selection: {selectedIndex}");
-        }
+        
+        // If we reach here, the selection is valid
+        PlayerPrefs.SetInt("SelectedDifficulty", selectedIndex);
+        PlayerPrefs.Save();
+        Debug.Log($"Saved difficulty selection: {selectedIndex}");
     }
 
     void ShowMessage(string message)
@@ -125,7 +176,23 @@ public class DifficultyDropdown : MonoBehaviour
         }
     }
 
-    System.Collections.IEnumerator ShowUnlockMessage()
+    void UpdateCongratulationsMessage()
+    {
+        // Stop any existing congratulation message
+        if (congratsCoroutine != null)
+        {
+            StopCoroutine(congratsCoroutine);
+            congratsCoroutine = null;
+        }
+        
+        // Start scrolling text if all difficulties are unlocked
+        if (easyCompleted && mediumCompleted)
+        {
+            congratsCoroutine = StartCoroutine(ShowUnlockMessage());
+        }
+    }
+
+    IEnumerator ShowUnlockMessage()
     {
         while (true)
         {
@@ -136,6 +203,10 @@ public class DifficultyDropdown : MonoBehaviour
                 infoText.text = "";
                 yield return new WaitForSeconds(1.5f);
             }
+            else
+            {
+                yield return null;
+            }
         }
     }
 
@@ -143,61 +214,29 @@ public class DifficultyDropdown : MonoBehaviour
     {
         Debug.Log("CompleteEasyMode() called - About to unlock Medium difficulty");
 
-        // Find the manager and use it to unlock
-        DifficultyUnlockManager unlockManager = FindAnyObjectByType<DifficultyUnlockManager>();
         if (unlockManager != null)
         {
             unlockManager.CompleteEasyMode();
+            Debug.Log("Medium difficulty should now be unlocked!");
         }
         else
         {
-            // Fallback to direct PlayerPrefs if no manager found
-            PlayerPrefs.SetInt("EasyCompleted", 1);
-            PlayerPrefs.Save();
+            Debug.LogError("Cannot complete Easy mode - DifficultyUnlockManager not found!");
         }
-
-        // Update our local state
-        easyCompleted = true;
-
-        // Immediately update the UI
-        difficultyDropdown.options[1].text = "Medium";
-        difficultyDropdown.RefreshShownValue();
-
-        // Update lock status and show message
-        UpdateLockStatus();
-        ShowMessage("Medium difficulty unlocked!");
-
-        Debug.Log("Medium difficulty should now be unlocked!");
     }
 
     public void CompleteMediumMode()
     {
         Debug.Log("CompleteMediumMode() called - About to unlock Hard difficulty");
 
-        // Find the manager and use it to unlock
-        DifficultyUnlockManager unlockManager = FindAnyObjectByType<DifficultyUnlockManager>();
         if (unlockManager != null)
         {
             unlockManager.CompleteMediumMode();
+            Debug.Log("Hard difficulty should now be unlocked!");
         }
         else
         {
-            // Fallback to direct PlayerPrefs if no manager found
-            PlayerPrefs.SetInt("MediumCompleted", 1);
-            PlayerPrefs.Save();
+            Debug.LogError("Cannot complete Medium mode - DifficultyUnlockManager not found!");
         }
-
-        // Update our local state
-        mediumCompleted = true;
-
-        // Immediately update the UI
-        difficultyDropdown.options[2].text = "Hard";
-        difficultyDropdown.RefreshShownValue();
-
-        // Update lock status and show message
-        UpdateLockStatus();
-        ShowMessage("Hard difficulty unlocked!");
-
-        Debug.Log("Hard difficulty should now be unlocked!");
     }
 }

@@ -1,0 +1,345 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Setup\\AsteriskBatch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|c:\\setup\\asteriskbatch\\assets\\scripts\\sceneaccessibilityapplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneaccessibilityapplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|c:\\setup\\asteriskbatch\\assets\\scripts\\accessibilitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\accessibilitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\buttoneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttoneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\difficultydropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\difficultydropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\difficultyunlockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\difficultyunlockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\difficultymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\difficultymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\explosionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\explosionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\spaceshipdamageeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipdamageeffects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\sceneinitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneinitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\backgroudscroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backgroudscroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\star.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\star.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\spaceshipthruster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipthruster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\unifiedbuttonhover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\unifiedbuttonhover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\scripts\\calibrationrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\calibrationrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\hyperimureceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\hyperimureceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|C:\\Setup\\AsteriskBatch\\assets\\calibrationsessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D15946-480E-C864-A7DF-21415D812D98}|Assembly-CSharp.csproj|solutionrelative:assets\\calibrationsessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\HomeScreenController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\HomeScreenController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\IMUCalibrationController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\IMUCalibrationController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ButtonValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ButtonValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SceneAccessibilityApplier.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SceneAccessibilityApplier.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneAccessibilityApplier.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SceneAccessibilityApplier.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneAccessibilityApplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:01:48.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ButtonEffect.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ButtonEffect.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonEffect.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ButtonEffect.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ButtonEffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:56:09.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccessibilityManager.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\AccessibilityManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AccessibilityManager.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\AccessibilityManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AccessibilityManager.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAYwL4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:55:22.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DifficultyDropdown.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\DifficultyDropdown.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DifficultyDropdown.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\DifficultyDropdown.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DifficultyDropdown.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:42:17.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DifficultyUnlockManager.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\DifficultyUnlockManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DifficultyUnlockManager.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\DifficultyUnlockManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DifficultyUnlockManager.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAYwNIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:40:25.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DifficultyManager.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\DifficultyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DifficultyManager.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\DifficultyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DifficultyManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:39:30.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExplosionManager.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ExplosionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ExplosionManager.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ExplosionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ExplosionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:19:26.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SpaceshipController.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SpaceshipController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipController.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SpaceshipController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceshipController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:17:58.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpaceshipDamageEffects.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SpaceshipDamageEffects.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipDamageEffects.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SpaceshipDamageEffects.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceshipDamageEffects.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T00:10:51.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SceneInitManager.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SceneInitManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneInitManager.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SceneInitManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneInitManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T13:01:41.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BackgroudScroll.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\BackgroudScroll.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BackgroudScroll.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\BackgroudScroll.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BackgroudScroll.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAIBJwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T13:00:48.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Star.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\Star.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Star.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\Star.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Star.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAYwLgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:15:01.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SpaceshipThruster.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SpaceshipThruster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipThruster.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\SpaceshipThruster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceshipThruster.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwv4AAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T11:23:05.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CalibrationRequirement.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\CalibrationRequirement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CalibrationRequirement.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\CalibrationRequirement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CalibrationRequirement.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAgwKUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:27:47.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HyperIMUReceiver.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\HyperIMUReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\HyperIMUReceiver.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\HyperIMUReceiver.cs",
+              "RelativeToolTip": "Assets\\HyperIMUReceiver.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAowMUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:00:16.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeScreenController.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\HomeScreenController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HomeScreenController.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\HomeScreenController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HomeScreenController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:43:59.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IMUCalibrationController.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\IMUCalibrationController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IMUCalibrationController.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\IMUCalibrationController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IMUCalibrationController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAowG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:43:00.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CalibrationSessionManager.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\CalibrationSessionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\CalibrationSessionManager.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\CalibrationSessionManager.cs",
+              "RelativeToolTip": "Assets\\CalibrationSessionManager.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T09:30:55.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnifiedButtonHover.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\UnifiedButtonHover.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnifiedButtonHover.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\UnifiedButtonHover.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnifiedButtonHover.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAADwv1UAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:50:19.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ButtonValidator.cs",
+              "DocumentMoniker": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ButtonValidator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonValidator.cs",
+              "ToolTip": "C:\\Setup\\AsteriskBatch\\Assets\\Scripts\\ButtonValidator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ButtonValidator.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAkwNwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:20:10.969Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

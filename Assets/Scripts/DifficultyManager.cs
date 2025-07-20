@@ -8,8 +8,13 @@ public class DifficultyManager : MonoBehaviour
 
     private void Start()
     {
-        // Get saved difficulty from PlayerPrefs (default to Medium if not set)
+        // In DifficultyManager.cs - Start() method
         string difficulty = PlayerPrefs.GetString("SelectedDifficulty", "Medium");
+
+        // We need to also set the integer value for other components that use it
+        PlayerPrefs.SetInt("SelectedDifficulty", difficulty == "Easy" ? 0 : (difficulty == "Medium" ? 1 : 2));
+        PlayerPrefs.Save();
+
 
         // Enable the correct spawner
         SetDifficulty(difficulty);

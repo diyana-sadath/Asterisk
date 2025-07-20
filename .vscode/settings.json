@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Asterisk.sln"
+    "dotnet.defaultSolution": "AsteriskBatch.sln"
 }
